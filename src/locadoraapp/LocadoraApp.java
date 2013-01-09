@@ -10,6 +10,7 @@ import com.ricardocaldeira.midia.Filme;
 import com.ricardocaldeira.midia.FilmeJpaController;
 import com.ricardocaldeira.genero.Genero;
 import com.ricardocaldeira.genero.GeneroJpaController;
+import com.ricardocaldeira.gui.Formulario;
 import com.ricardocaldeira.locacao.Locacao;
 import com.ricardocaldeira.locacao.LocacaoJpaController;
 import com.ricardocaldeira.mensalidade.Mensalidade;
@@ -43,6 +44,9 @@ public class LocadoraApp {
         Locacao locacao = new Locacao();
         
         efetuarLocacaoParaClienteMensalista(filmeCont, mensalistaCont, locacao, locacaoCont);
+        
+        Formulario form = new Formulario();
+        form.setVisible(true);
                 
         System.out.println("ok");
         
