@@ -67,7 +67,7 @@ public class Genero implements Serializable {
 
     @Override
     public String toString() {
-        return "banco.exemplo.Genero[ id=" + id + " ]";
+        return nome;
     }
 
     /**
