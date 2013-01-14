@@ -142,7 +142,7 @@ public class Formulario extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparActionPerformed
-        // TODO add your handling code here:
+        limparCampos();
     }//GEN-LAST:event_btnLimparActionPerformed
 
     private void txtTituloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTituloActionPerformed
@@ -165,6 +165,7 @@ public class Formulario extends javax.swing.JFrame {
         filmeCont.create(filme);
         
         JOptionPane.showMessageDialog(this, "Filme cadastrado com sucesso!");
+        limparCampos();
         
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
@@ -218,4 +219,11 @@ public class Formulario extends javax.swing.JFrame {
     private javax.swing.JTextField txtTitulo;
     private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables
+
+    private void limparCampos() {
+        // TODO add your handling code here:
+        txtDuracao.setText(null);
+        txtQtdeCopias.setText(null);
+        txtTitulo.setText(null);
+    }
 }
